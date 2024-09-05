@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Constitution Bot</title>
+</head>
+<style>
+    body {
+        background-image: url(https://media.licdn.com/dms/image/v2/D4E12AQFsuYo_dkuCnA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1704552087204?e=2147483647&v=beta&t=DNFg-2yEyomXShVnUwn9TcvLN-O31waP1D_TRSf-c3E);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #5d166d;
+    }
+
+    h1 {
+        text-align: center;
+        color: #f6088f;
+        margin-top: 20px;
+    }
+
+    p {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+
+
+    /* Botpress Web Chat Styles */
+    .bp-webchat {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+</style>
+
+<body>
+    <h1>welcome to the Constitutional Clarity Bot</h1>
+
+    <p>Ask any questions about indian Constitution</p>
+
+    <!--Embed Botpress web chat-->
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script
+        src="https://mediafiles.botpress.cloud/bb22dcf4-3bd9-43f7-b918-e6f4ff3135b3/webchat/v2.1/config.js"></script>
+
+    <script>
+        window.botpressWebChat.init({
+            host: 'https://cdn.botpress.cloud/webchat/v2.1',
+            botId: 'bb22dcf4-3bd9-43f7-b918-e6f4ff3135b3',
+            // Additional configuration options can be added here if needed
+        });
+    </script>
+</body>
+<footer>
+    © 2024 CHATBOT
+</footer>
+
+</html>
